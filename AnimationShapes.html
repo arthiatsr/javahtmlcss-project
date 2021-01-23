@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Rotating Elements</title>
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+            }
+           .divone{
+                width:100px;
+                height:100px;
+                background-image: linear-gradient(gray 0%, red 100%);
+                position:relative;
+                animation:mymove 5s infinite;
+                animation-timing-function: linear;
+
+            }
+            .divtwo{
+                width:100px;
+                height:100px;
+                background-image: linear-gradient(gray 0%, red 100%);
+                position:relative;
+                animation:mymove 5s infinite;
+                animation-timing-function: ease-in;
+                animation-direction:alternate;
+
+            }
+            .divthree{
+                background: red;
+                position:relative;
+                animation: mymove2 3s infinite;
+                animation-fill-mode:both;
+                animation-direction:alternate;
+            }
+
+            @keyframes mymove{
+                from {
+                    left: 0px;
+                    }
+                to{
+                    left: 555px;
+                }
+
+            }
+             @keyframes mymove2{
+                 from {
+                    top: 0px;
+                    }
+                to{
+                    top: 200px;
+                    background-color:blue;
+                }
+              }
+
+        </style>
+    </head>
+    <body>
+        <h1>
+            Annimation - Shapes
+        </h1>
+        <div class="divone">
+
+
+        </div>
+        <div class="divtwo">
+
+        </div>
+        <div class="divthree">
+
+        </div>
+
+        <a href="./Project.html">
+            <h2>
+                Go Back
+            </h2>
+        </a>
+    </body>
+</html>
